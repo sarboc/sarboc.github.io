@@ -25,5 +25,12 @@ module.exports = {
   devServer: {
     contentBase: parentDir,
     historyApiFallback: true
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+    modules: [
+      path.resolve('.'),
+      path.resolve('./node_modules')
+    ]
   }
 }
